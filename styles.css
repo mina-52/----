@@ -14,28 +14,6 @@ body {
     position: relative;
 }
 
-/* Demo Watermark */
-.demo-watermark {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-15deg);
-    z-index: 1;
-    pointer-events: none;
-    user-select: none;
-    filter: drop-shadow(0 0 10px rgba(74, 144, 226, 0.3));
-}
-
-.watermark-text {
-    font-size: 120px;
-    font-weight: 900;
-    color: rgba(74, 144, 226, 0.15);
-    text-shadow: 0 0 30px rgba(74, 144, 226, 0.2);
-    letter-spacing: 0.1em;
-    white-space: nowrap;
-    font-family: 'Noto Sans JP', sans-serif;
-    opacity: 0.8;
-}
 
 /* Employee Notice Inline */
 .employee-notice-inline {
@@ -308,8 +286,6 @@ body {
 .main-content {
     margin-top: 80px;
     transition: margin-top 0.3s ease;
-    position: relative;
-    z-index: 10;
 }
 
 /* Container */
