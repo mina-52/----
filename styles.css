@@ -23,16 +23,18 @@ body {
     z-index: 1;
     pointer-events: none;
     user-select: none;
+    filter: drop-shadow(0 0 10px rgba(74, 144, 226, 0.3));
 }
 
 .watermark-text {
     font-size: 120px;
     font-weight: 900;
-    color: rgba(74, 144, 226, 0.08);
-    text-shadow: 0 0 20px rgba(74, 144, 226, 0.1);
+    color: rgba(74, 144, 226, 0.15);
+    text-shadow: 0 0 30px rgba(74, 144, 226, 0.2);
     letter-spacing: 0.1em;
     white-space: nowrap;
     font-family: 'Noto Sans JP', sans-serif;
+    opacity: 0.8;
 }
 
 /* Employee Notice Inline */
