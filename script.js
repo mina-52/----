@@ -29,4 +29,28 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Random tooltip messages
+    const tooltipMessages = [
+        'あなたが知らない福利厚生があるかも！？',
+        'ハロウィン旅行でも利用できる！',
+        '紅葉狩り旅行でも利用できる！',
+        '温泉リゾートでも利用できる！'
+    ];
+
+    const tooltipText = document.getElementById('tooltip-text');
+    const randomTooltip = document.getElementById('random-tooltip');
+    const welfareButton = document.querySelector('.welfare-button');
+
+    if (tooltipText && randomTooltip && welfareButton) {
+        // Set random message on page load
+        const randomMessage = tooltipMessages[Math.floor(Math.random() * tooltipMessages.length)];
+        tooltipText.textContent = randomMessage;
+
+        // Change message on each hover
+        welfareButton.addEventListener('mouseenter', function() {
+            const randomMessage = tooltipMessages[Math.floor(Math.random() * tooltipMessages.length)];
+            tooltipText.textContent = randomMessage;
+        });
+    }
 });
